@@ -12,8 +12,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 app.on_message(
     filters.command("repo")
-    & filters.group
-    & ~filters.edited & filters.group & ~filters.edited)
+    & filters.group)
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
@@ -30,8 +29,7 @@ async def help(client: Client, message: Message):
 
 @app.on_message(
     filters.command("source")
-    & filters.group
-    & ~filters.edited & filters.group & ~filters.edited)
+    & filters.group)
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
@@ -48,8 +46,7 @@ async def help(client: Client, message: Message):
 
 @app.on_message(
     filters.command("repo")
-    & filters.private
-    & ~filters.edited & filters.private & ~filters.edited)
+    & filters.private)
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
