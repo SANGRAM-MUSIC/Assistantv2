@@ -7,8 +7,6 @@ import re
 import asyncio
 import time
 from VipX import app
-import string
-from strings import get_command
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -53,7 +51,7 @@ SHAYRI = [ " 🌺**बहुत अच्छा लगता है तुझे
            " 🌺**सच्चा प्यार कहा किसी के नसीब में होता है. एसा प्यार कहा इस दुनिया में किसी को नसीब होता है.**🌺\n\n**🥀Sacha pyar kaha kisi ke nasib me hota hai esa pyar kahan is duniya me kisi ko nasib hota hai.🥀** " ]
 
 # Command
-SHAYRI_COMMAND = get_command("SHAYRI_COMMAND")
+SHAYRI_COMMAND = ["gf", "bf", "shayri", "sari", "shari", "love"]
 
 @app.on_message(
     filters.command(SHAYRI_COMMAND)
