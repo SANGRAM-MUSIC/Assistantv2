@@ -6,7 +6,7 @@ import os
 import re
 import asyncio
 import time
-from VipX import app
+from VIPMUSIC import app
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
