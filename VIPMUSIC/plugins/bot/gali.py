@@ -6,8 +6,6 @@ import re
 import asyncio
 import time
 from VIPMUSIC import app
-import string
-from strings import get_command
 from VIPMUSIC.misc import SUDOERS
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
