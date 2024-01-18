@@ -66,7 +66,7 @@ async def help(client: Client, message: Message):
     )
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
+        photo=f"https://telegra.ph/file/f47cfc11d23799d3755f9.jpg",
         caption=f"""🍁See My Owner🥳""",
         reply_markup=InlineKeyboardMarkup(
             [
